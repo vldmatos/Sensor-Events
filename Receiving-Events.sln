@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "applications\api\API.csproj", "{14847DF6-DA01-474E-B57F-6D3FDB3A8C4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sensors", "applications\sensors\Sensors.csproj", "{965A3B3C-A131-481D-BDD0-A3429848CFB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{91B36954-1D24-4261-9253-295E62065C1C}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		.gitlab-ci.yml = .gitlab-ci.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6335C3EC-5468-416E-9C32-DB10E663E91F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "environment", "environment", "{193DC7DF-D4E1-4244-8B03-43A6DAAE9450}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gitlab", "gitlab", "{AF0D06AB-5343-40B3-BD68-82C34562DCC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "prometheus", "prometheus", "{E77099A3-86C3-4CB5-9367-88AD6EF6B927}"
+	ProjectSection(SolutionItems) = preProject
+		.environment\prometheus\prometheus.yml = .environment\prometheus\prometheus.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grafana", "grafana", "{D88459DF-1E00-4806-B7F9-2917C7AFCA6D}"
+	ProjectSection(SolutionItems) = preProject
+		.environment\grafana\dashboard.json = .environment\grafana\dashboard.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14847DF6-DA01-474E-B57F-6D3FDB3A8C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14847DF6-DA01-474E-B57F-6D3FDB3A8C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14847DF6-DA01-474E-B57F-6D3FDB3A8C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14847DF6-DA01-474E-B57F-6D3FDB3A8C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965A3B3C-A131-481D-BDD0-A3429848CFB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965A3B3C-A131-481D-BDD0-A3429848CFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965A3B3C-A131-481D-BDD0-A3429848CFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965A3B3C-A131-481D-BDD0-A3429848CFB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6335C3EC-5468-416E-9C32-DB10E663E91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6335C3EC-5468-416E-9C32-DB10E663E91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6335C3EC-5468-416E-9C32-DB10E663E91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6335C3EC-5468-416E-9C32-DB10E663E91F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6335C3EC-5468-416E-9C32-DB10E663E91F} = {91B36954-1D24-4261-9253-295E62065C1C}
+		{193DC7DF-D4E1-4244-8B03-43A6DAAE9450} = {91B36954-1D24-4261-9253-295E62065C1C}
+		{AF0D06AB-5343-40B3-BD68-82C34562DCC7} = {91B36954-1D24-4261-9253-295E62065C1C}
+		{E77099A3-86C3-4CB5-9367-88AD6EF6B927} = {193DC7DF-D4E1-4244-8B03-43A6DAAE9450}
+		{D88459DF-1E00-4806-B7F9-2917C7AFCA6D} = {193DC7DF-D4E1-4244-8B03-43A6DAAE9450}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD569A57-6A98-46B2-A958-ADF8E5CF4131}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,47 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Sensor Simulator</h1>
+	<p>This application is used to simulate the sending of events by sensors..</p>
+</div>
+
+<br />
+
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-8">
+			<form asp-page-handler="ProcessRequest" method="post">
+				<div class="mb-3">
+					<label class="form-label" for="Sensor"><b>Sensor:</b> Name of sensor no instance, only name</label>
+					<input class="form-control" type="text" id="Name" name="Name" value="APXT003" />
+				</div>
+				<div class="mb-3">
+					<label class="form-label" for="Limit"><b>Limit:</b> Limit to value of events</label>
+					<input class="form-control" type="number" name="Limit" id="Limit" value="20" />
+				</div>
+				<div class="mb-3">
+					<label class="form-label" for="Events"><b>Count Events:</b> Count of events to send</label>
+					<input class="form-control" type="number" name="CountEvents" id="CountEvents" value="5" />
+				</div>
+				<div class="mb-3">
+					<label class="form-label" for="Region"><b>Region:</b> Tag Region of sensor</label>
+					<input class="form-control" type="text" name="Region" id="Region" value="brasil.sudeste" />
+				</div>
+				<div class="mb-3">
+					<button class="btn btn-primary" type="submit">Send</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+@{
+
+
+}

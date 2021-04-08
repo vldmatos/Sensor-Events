@@ -1,2 +1,3 @@
-# Sensor-Events
-Applications monitoring sensor events 
+# Sensor Events
+
+Applicatins that simulate events of sensors
